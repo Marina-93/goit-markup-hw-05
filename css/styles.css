@@ -80,6 +80,11 @@ img{
     font-size: 26px;
     line-height: 1.19;
 }
+.list .menu{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .item{
     margin-right: 90px;
     padding-top: 24px;
@@ -99,6 +104,7 @@ img{
 }
 .menu-item .menu{
     padding-top: 32px;
+    padding-bottom: 32px;
 }
 .site li:last-child{
     margin-right: 0px;
@@ -118,9 +124,11 @@ img{
     transition: color var(--animation);
 }
 .menu.link.current{
+    position: relative;
     color: var(--acttiv-cl);
 }
-.current::after{
+.menu.link.current::after{
+    position: absolute;
     content: "";
     display: block;
     width: 100%;
@@ -144,8 +152,8 @@ img{
     max-width: 1600px;
     background-color: var(--bg-hat);
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 200px;
     padding-top: 200px;
     background-position: center;
@@ -208,18 +216,22 @@ img{
 .block-job{
     position: relative;
 }
-.job-second-title{
+.blocl-titl-job{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.job-second-title{
     color: #FFFFFF;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     text-transform: uppercase;
-    padding: 27px 80px;
-    background-color: rgba(47, 48, 58, 0.8);;
 }
 .block-svg{
     display: flex;
@@ -231,9 +243,9 @@ img{
     background-color: var(--buton);
 }
 .job-svg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 70px;
     height: 70px;
 }
@@ -308,9 +320,8 @@ img{
 .clints{
     display: flex;
 }
-.list-clints-svg{
-    margin-left: auto;
-    margin-right: auto;
+.list-clints-svg:not(:last-child){
+    margin-right: 30px;
 }
 .list-clints{
     display: flex;
@@ -372,6 +383,7 @@ img{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .second-network{
     display: block;
