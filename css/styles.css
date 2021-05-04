@@ -95,6 +95,8 @@ img{
 }
 .site{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav{
     margin-right: auto;
@@ -117,11 +119,11 @@ img{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color var(--animation);
 }
 .menu:hover,
 .menu:focus{
-    color: var(--acttiv-cl);
-    transition: color var(--animation);
+    color: var(--acttiv-cl);  
 }
 .menu.link.current{
     position: relative;
@@ -181,12 +183,12 @@ img{
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    transition: color var(--animation), background-color var(--animation);
 }
 .button:hover,
 .button:focus{
     background-color: var(--acttiv-cl);
     color: var(--blfon-text-cl);
-    transition: color var(--animation), background-color var(--animation);
 }
 .team{
     display: flex;
@@ -300,15 +302,14 @@ img{
     height: 40px;
     border-radius: 50%;
     background-color: #FFFFFF;
+    transition: background-color var(--animation), fill var(--animation);
 }
 .log-network:hover .network-svg,
 .log-network:focus .network-svg{
     fill: var(--buton);
-    transition: fill var(--animation);
 }
 .log-network:hover,
 .log-network:focus{
-    transition: background-color var(--animation);
     background-color: var(--acttiv-cl);
 }
 .network-svg{
@@ -331,20 +332,19 @@ img{
     height: 90px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 4px;   
 }
 .clint-svg{
     fill: #AFB1B8;
+    transition: background-color var(--animation), fill var(--animation);
 }
 .list-clints:hover .clint-svg,
 .list-clints:focus .clint-svg{
     fill: var(--acttiv-cl);
-    transition: fill var(--animation);
 }
 .list-clints:hover,
 .list-clints:focus{
-    border-color: var(--acttiv-cl);
-    transition: background-color var(--animation);
+    border-color: var(--acttiv-cl);  
 }
 /*Футер*/
 .footer{
@@ -358,15 +358,15 @@ img{
     font-style: inherit;
 }
 .map{
-    color: var(--blfon-text-cl);
+    color: var(--blfon-tearticl-text-cl);
 }
 .add-foot{
     color: var(--articl-text-cl);
+    transition: color var(--animation);    
 }
 .add-foot:hover,
 .add-foot:focus{
     color: var(--acttiv-cl);
-    transition: color var(--animation);
 }
 .gis-foot{
     margin-bottom: 10px;
@@ -452,7 +452,6 @@ background: rgba(255, 255, 255, 0.1);
     margin-top: -30px;
     margin-left: -30px;
 }
-
 .list-img{
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
@@ -463,9 +462,11 @@ background: rgba(255, 255, 255, 0.1);
     margin-top: 30px;
     margin-left: 30px;
 }
+.card-link{
+    transition: box-shadow var(--animation);    
+}
 .card-link:hover,
 .card-link:focus{
-    transition: box-shadow var(--animation);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-img{
@@ -486,12 +487,12 @@ background: rgba(255, 255, 255, 0.1);
     display: block;
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
+    transition: var(--animation);
 }
 .card-link:hover .card-page,
 .card-link:focus .card-page{
     opacity: 1;
     transform: translateY(0);
-    transition: var(--animation);
 }
 .card{
     padding: 20px 24px;
@@ -506,13 +507,13 @@ background: rgba(255, 255, 255, 0.1);
     margin-left: 8px;
     border: none;
     border-radius: 5px;
+    transition: background-color var(--animation), color var(--animation);
 }
 .manu-work:hover,
 .manu-work:focus{
     background-color: var(--acttiv-cl);
     color: var(--buton);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: background-color var(--animation), color var(--animation);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
 }
 .manu-work.all{
     background-color: var(--acttiv-cl);
